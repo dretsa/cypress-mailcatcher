@@ -1,0 +1,40 @@
+{
+  "name": "@dretsa/cypress-mailcatcher",
+  "version": "1.0.0",
+  "description": "Cypress commands for asserting on emails caught by MailCatcher",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "cypress",
+    "mailcatcher",
+    "email",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "cypress": ">=12"
+  },
+  "devDependencies": {
+    "@rslib/core": "^0.23.2",
+    "cypress": "^15.21.0",
+    "typescript": "^5.9.3"
+  }
+}
