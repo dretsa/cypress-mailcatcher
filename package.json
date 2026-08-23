@@ -40,7 +40,7 @@
     "testing"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "cypress": ">=12"
   },
