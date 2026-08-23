@@ -9,17 +9,21 @@ export interface MailcatcherMessage {
     created_at: string;
 }
 
-const BASE_URL = Cypress.expose('mailcatcherUrl');
-
+// Read per-call so config set in the consumer's cypress config / beforeEach is honored.
+const baseUrl = (): string => {
+    const url = Cypress.env('mailcatcherUrl');
+    if (!url) throw new Error('cypress-mailcatcher: env variable "mailcatcherUrl" is not set');
+    return url;
+};
 
 Cypress.Commands.add('mailcatcherMessages', () =>
     cy
-        .request<MailcatcherMessage[]>(`${BASE_URL}/messages`)
+        .request<MailcatcherMessage[]>(`${baseUrl()}/messages`)
         .its('body'),
 );
 
 Cypress.Commands.add('mailcatcherClear', () => {
-    cy.request('DELETE', `${BASE_URL}/messages`);
+    cy.request('DELETE', `${baseUrl()}/messages`);
 });
 
 declare global {
