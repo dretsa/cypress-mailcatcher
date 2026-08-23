@@ -1,0 +1,1 @@
+# @dretsa/cypress-mailcatcher
