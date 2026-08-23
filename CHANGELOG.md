@@ -1,5 +1,12 @@
 # cypress-mailcatcher
 
+## 1.2.0
+
+### Minor Changes
+
+- e77bcd9: Added all endpoints for MailCatcher
+- fc21c8c: Remove package prefix
+
 ## 1.1.1
 
 ### Patch Changes
