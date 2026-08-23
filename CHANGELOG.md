@@ -1,5 +1,11 @@
 # @dretsa/cypress-mailcatcher
 
+## 1.1.1
+
+### Patch Changes
+
+- f4d6cf3: Fix env variable reading
+
 ## 1.1.0
 
 ### Minor Changes
