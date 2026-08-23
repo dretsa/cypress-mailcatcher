@@ -1,5 +1,5 @@
 {
-  "name": "@dretsa/cypress-mailcatcher",
+  "name": "cypress-mailcatcher",
   "version": "1.1.1",
   "description": "Cypress commands for asserting on emails caught by MailCatcher",
   "type": "module",

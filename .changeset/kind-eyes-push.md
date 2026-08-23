@@ -2,4 +2,4 @@
 "cypress-mailcatcher": minor
 ---
 
-Added all endpoints for MailCatcher
+Remove package prefix

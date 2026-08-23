@@ -1,4 +1,4 @@
-# @dretsa/cypress-mailcatcher
+# cypress-mailcatcher
 
 ## 1.1.1
 

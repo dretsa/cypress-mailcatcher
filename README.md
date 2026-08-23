@@ -1,4 +1,4 @@
-# @dretsa/cypress-mailcatcher
+# cypress-mailcatcher
 
 Cypress commands for asserting on emails caught by [MailCatcher](https://mailcatcher.me/).
 
@@ -8,9 +8,9 @@ end-to-end tests can read, assert on, and clear sent emails.
 ## Install
 
 ```sh
-npm install --save-dev @dretsa/cypress-mailcatcher
+npm install --save-dev cypress-mailcatcher
 # or
-pnpm add -D @dretsa/cypress-mailcatcher
+pnpm add -D cypress-mailcatcher
 ```
 
 Requires Cypress `>=12` (declared as a peer dependency).
@@ -21,7 +21,7 @@ Requires Cypress `>=12` (declared as a peer dependency).
 (`cypress/support/e2e.js` or `.ts`):
 
 ```js
-import '@dretsa/cypress-mailcatcher';
+import 'cypress-mailcatcher';
 ```
 
 **2. Point it at your MailCatcher** via the `mailcatcherUrl` Cypress env
@@ -98,7 +98,7 @@ exported types `MailcatcherMessage`, `MailcatcherAttachment`, and
 `MailcatcherFormat` are available if you need them:
 
 ```ts
-import type { MailcatcherMessage } from '@dretsa/cypress-mailcatcher';
+import type { MailcatcherMessage } from 'cypress-mailcatcher';
 ```
 
 ## License
